@@ -1,0 +1,485 @@
+/* -------------------
+   Common Css Start
+--------------------- */
+:root{
+    --background-color:#521262;
+    --secondary-background-color:#280E57;
+    --font-color:white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color)
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.container{
+    width: 1766px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.block{
+    display: block;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-75{
+    width: 75%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-25{
+    width: 25%;
+}
+
+.margin-auto{
+    margin: auto;
+}
+
+h2{
+    font-size: 56px;
+    font-weight: 600;
+    text-align: center;
+    color:var(--font-color);
+    padding-bottom: 147px;
+    text-transform: capitalize;
+}
+/* -----------------
+   Common Css End
+------------------- */
+
+
+
+
+
+/* --------------------------------
+      Nav Section Css Start
+----------------------------------- */
+#nav{
+    background-color:var(--font-color);
+}
+
+#nav .container nav .menu ul li a{
+    color: var(--secondary-background-color);
+}
+
+#nav .container nav .logo{
+    padding: 29px 0;
+}
+
+#nav .container nav .menu .row1{
+    padding-right: 157px;
+}
+
+#nav .container nav .menu ul li{
+    padding-right: 38px;
+    font-size: 22px;
+}
+
+#nav .container nav .menu ul li a{
+    padding-bottom: 15px;
+    transition: .2s;
+}
+
+#nav .container nav .menu ul li:hover a{
+    border-bottom: 3px solid var(--secondary-background-color);
+    text-shadow: 0px 0px 2px var(--background-color);
+}
+/* --------------------------------
+      Nav Section Css End
+----------------------------------- */
+
+
+
+
+
+/* --------------------------------
+      Banner Section Css Start
+----------------------------------- */
+#banner{
+    background-image: url(./../img/hero-banner.jpg);
+    height: 1076px;
+    background-size: cover;
+    background-position: right;
+    background-attachment:fixed;
+}
+
+#banner .container p{
+    width: 602px;
+    font-size: 36px;
+    font-weight: 600;
+    padding-top: 25%;
+    color: var(--font-color);
+    padding-left: 55px;
+}
+
+/* --------------------------------
+      Banner Section Css End
+----------------------------------- */
+
+
+
+
+
+/* --------------------------------
+      Counter Section Css Start
+----------------------------------- */
+#counter .container .inner-container .inner-container-item{
+    background: linear-gradient(135deg, rgba(170, 18, 129, 1), rgba(235, 8, 64, 1) 70.71%);
+    padding: 50px 137px;
+    width: 1275px;
+    transform: translateY(-50%);
+    border-radius: 15px;
+}
+
+#counter .container .inner-container .inner-container-item .count{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 49px;
+    color: var(--font-color);
+}
+#counter .container .inner-container .inner-container-item .count-details{
+    color:var(--font-color);
+    font-size: 18px;
+    line-height: 28px;
+}
+/* --------------------------------
+      Counter Section Css End
+----------------------------------- */
+
+
+
+
+
+/* --------------------------------
+      Plan Section Css Start
+----------------------------------- */
+#plan .container .plan{
+    width: 488px;
+    padding:75px 55px 50px 55px;
+    background: linear-gradient(145deg, rgba(170, 18, 129, 1), rgba(235, 8, 64, 1));
+    border-radius: 25px;
+}
+
+#plan .container .plan h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--font-color);    
+    padding-bottom: 63px;
+}
+
+#plan .container .plan .bold{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--font-color);
+}
+
+#plan .container .plan .light{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding-bottom: 14px;
+}
+/* --------------------------------
+      Plan Section Css End
+----------------------------------- */
+
+
+
+
+
+/* --------------------------------
+    Statistics Section Css Start
+----------------------------------- */
+#statistics h2{
+    font-size: 56px;
+    font-weight: 600;
+    text-align: center;
+    color:var(--font-color);
+    padding: 166px 0;
+}
+
+#statistics .outer-container{
+    background-image: url(./../img/statistics-img.png);
+    height: 608px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#statistics .outer-container .overlay{
+    background-color: rgba(102, 57, 166, 0.35);
+    width: 100%;
+    height: 100%;
+}
+
+#statistics .container{
+    padding-top: 100px;
+}
+
+#statistics .container .container1 h3,
+#statistics .container .container2 h3
+{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding-bottom: 25px;
+}
+
+#statistics .container .container1 p,
+#statistics .container .container2 p
+{
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--font-color);
+    padding-bottom: 60px;
+}
+/* --------------------------------
+    Statistics Section Css End
+----------------------------------- */
+
+
+
+
+
+
+/* --------------------------------
+      Programe Section Css Start
+----------------------------------- */
+#programe h2{
+    padding:155px 0 24px 0;
+}
+
+#programe p{
+    color: var(--font-color);
+    font-size: 24px;
+    padding-bottom: 180px;
+}
+/* --------------------------------
+      Programe Section Css End
+----------------------------------- */
+
+
+
+
+
+
+/* --------------------------------
+      USDT Section Css Start
+----------------------------------- */
+#usdt-statistics h2{
+    font-size: 56px;
+    font-weight: 600;
+    text-align: center;
+    color:var(--font-color);
+    padding: 166px 0;
+}
+
+#usdt-statistics .outer-container{
+    background-image: url(./../img/USDT-Statistics.png);
+    height: 608px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#usdt-statistics .outer-container .overlay{
+    background-color: rgba(102, 57, 166, 0.25);
+    width: 100%;
+    height: 100%;
+}
+
+#usdt-statistics .container{
+    padding-top: 100px;
+}
+
+#usdt-statistics .container .container1 h3,
+#usdt-statistics .container .container2 h3
+{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding-bottom: 25px;
+}
+
+#usdt-statistics .container .container1 p,
+#usdt-statistics .container .container2 p
+{
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--font-color);
+    padding-bottom: 60px;
+}
+
+#usdt-statistics .inner-container-1 table{
+    padding-bottom: 150px;
+}
+
+#usdt-statistics .inner-container-1 table tr td{
+    width: 145px;
+    height: 45px;
+    border: 2px solid white;
+    inset: -200px;
+}
+
+#usdt-statistics .inner-container-1 h4,
+#usdt-statistics .inner-container-2 h4{
+    color: var(--font-color);
+    font-size: 48px;
+    font-weight: 600;
+    padding-bottom: 150px;
+}
+
+#usdt-statistics .inner-container-1 tr td,
+#usdt-statistics .inner-container-1 tr td{
+    color: var(--font-color);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* --------------------------------
+      USDT Section Css End
+----------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------
+      Payment Section Css Start
+----------------------------------- */
+#payment h2{
+    color: rgba(111, 231, 221, 1);
+    padding-top: 150px;
+}
+
+#payment .container{
+    width: 1500px;
+}
+
+#payment .container .inner-container div{
+    height: 162px;
+    margin-bottom: 100px;
+}
+
+#payment .container .inner-container div img{
+    height: fit-content;
+}
+
+/* --------------------------------
+      Payment Section Css End
+----------------------------------- */
+
+
+
+
+
+
+/* --------------------------------
+      FAQ Section Css Start
+----------------------------------- */
+#faq h2{
+    color: rgba(111, 231, 221, 1);
+    padding-top: 150px;
+}
+
+#faq .inner-container h4{
+    color:var(--background-color);
+    font-size: 22px;
+    font-weight: medium;
+    padding: 60px 255px 60px 35px;
+    background-color: var(--font-color);
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+/* --------------------------------
+      FAQ Section Css End
+----------------------------------- */
+
+
+
+
+
+
+/* --------------------------------
+      Footer Section Css Start
+----------------------------------- */
+#footer{
+    background-color:var(--font-color);
+    text-align: center;
+    padding: 130px 0;
+    margin-top: 80px;
+}
+
+
+#footer ul li a{
+    color: var(--secondary-background-color);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+#footer div ul{
+    padding: 40px 0 0 0 ;
+    justify-content: center;
+}
+
+/* --------------------------------
+      Footer Section Css End
+----------------------------------- */
